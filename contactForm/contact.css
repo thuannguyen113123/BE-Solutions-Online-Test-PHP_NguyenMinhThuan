@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+}
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 50px auto;
+}
+.container {
+  padding: 0px !important;
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #000;
+  gap: 30px;
+}
+.contact-form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+.contact-info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 65px;
+  background-color: #0c0c84;
+  color: white;
+  padding: 0 10px;
+}
+.contact-form_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.contact-form_title {
+  font-size: 28px;
+  color: blue;
+}
+.contact-form_icon {
+  font-size: 28px;
+  color: blue;
+}
+.contact-form_body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.contact-form_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-form_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: gray;
+}
+.contact-form_item input {
+  padding: 8px;
+  border: none;
+  border-bottom: 0.5px solid #000;
+}
+
+.contact-form_item input:focus {
+  border: none;
+  border-bottom: 0.5px solid #000;
+  outline: none;
+}
+.contact-form_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-form_footer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.btn-send {
+  padding: 10px 40px;
+  background-color: #467adc;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+//Phần contact info
+.contact-info h1 {
+  text-align: center !important;
+  font-size: 32px;
+}
+.contact-info_details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-info_item {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  gap: 10px;
+}
+.contact-info_footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  color: gray;
+}
+//Phần modal
+.modal-dialog {
+  max-width: 250px; /* Set the width for the modal */
+}
+
+.modal-content {
+  height: 325px;
+  width: 65% !important;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.modal-body_content {
+  font-size: 22px;
+  color: gray;
+}
+.modal-body i {
+  font-size: 120px;
+  color: red;
+  text-align: center;
+}
+.modal-footer {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+}
+.btn-primary {
+  width: 65% !important;
+  color: white;
+  font-size: 16px !important;
+  background-color: red !important;
+  border: none !important;
+  border-radius: 10px !important;
+}

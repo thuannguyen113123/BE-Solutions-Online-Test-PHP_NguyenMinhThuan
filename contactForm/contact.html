@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="/asset/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script defer src="validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container grid">
+        <form action="submit.php" method="POST" id="contactForm" class="contact-form">
+            <div class="contact-form_header">
+                <h1 class="contact-form_title">
+                    Send us a Message
+                </h1>
+                <div class="contact-form_icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+            </div>
+            <div class="contact-form_body">
+                <div class="contact-form_left">
+                    <div class="contact-form_item">
+                        <label for="inputYourName">Your Name</label>
+                        <input type="text" id="inputYourName" name="name" >
+                    </div>
+                    <div class="contact-form_item">
+                        <label for="inputPhone">Phone</label>
+                        <input type="tel" id="inputPhone" name="phone" >
+                    </div>
+                    <div class="contact-form_item">
+                        <label for="inputMessage">Message</label>
+                        <input type="text" id="inputMessage" name="message">
+                    </div>
+                </div>
+                <div class="contact-form_right">
+                    <div class="contact-form_item">
+                        <label for="inputEmailAddress">Email Address</label>
+                        <input type="email" id="inputEmailAddress" name="email" >
+                    </div>
+                    <div class="contact-form_item">
+                        <label for="inputCompany">Company</label>
+                        <input type="text" id="inputCompany" name="company" >
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form_footer">
+                <button class="btn-send" type="submit">
+                    Send
+                </button>
+            </div>
+        </form>
+        <div class="contact-info">
+            <h1 class="contact-info_title">Contact Information</h1>
+            <div class="contact-info_details">
+                <div class="contact-info_item">
+                    <div class="contact-info_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-info_content">360 King Street Feasterville Trevase,PA 19053</div>
+
+                </div>
+                <div class="contact-info_item">
+                    <div class="contact-info_icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-info_content">(800) 900-200-300</div>
+
+                </div>
+                <div class="contact-info_item">
+                    <div class="contact-info_icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="contact-info_content">nguyenminhthuann5@gmail.com</div>
+                </div>
+            </div>
+            <div class="contact-info_footer">
+                <div class="contact-info_icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="contact-info_icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="contact-info_icon">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Phần Modal -->
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="errorModalLabel">Face-plant!</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-body_content">Opps, something went wrong</p>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Try Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
